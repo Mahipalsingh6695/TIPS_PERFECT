@@ -1,0 +1,138 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>MCQ Test</title>
+</head>
+<body>
+    <h1>Answer the following questions</h1>
+    <form  method="POST">
+        {% for question in questions %}
+            <div>
+                <p>{{ question.question }}</p>
+                {% for option in question.options %}
+                    <input type="radio" name="{{ question.id }}" value="{{ option }}" required> {{ option }}<br>
+                {% endfor %}
+            </div>
+        {% endfor %}
+        <button type="submit">Submit Test</button>
+    </form>
+</body>
+</html> -->
+<style>
+    /* General styling for body and form */
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 1rem;
+        color: #555;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="radio"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    input[type="text"]:focus {
+        border-color: #ff7e5f;
+        outline: none;
+    }
+
+    .radio-group {
+        margin: 10px 0;
+    }
+
+    .radio-group input[type="radio"] {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .radio-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 1rem;
+        color: #444;
+    }
+
+    input[type="submit"] {
+        background-color: #ff7e5f;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #feb47b;
+    }
+
+    /* Style for better spacing */
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .form-container p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .form-container input {
+        margin-bottom: 20px;
+    }
+</style>
+
+<form action="/test" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required style="margin: 20px;">
+    <br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" name="mobile" required>
+    <br>
+    {% for question in questions %}
+        <p>{{ question['id'] }}. {{ question['question'] }}</p>
+        {% for option in question['options'] %}
+            <input type="radio" id="{{ question['id'] }}" name="{{ question['id'] }}" value="{{ option }}" required>
+            <label for="{{ question['id'] }}">{{ option }}</label>
+        {% endfor %}
+        <br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+</form>
+
