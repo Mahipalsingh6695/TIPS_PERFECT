@@ -120,12 +120,20 @@
         "rank": 15
     },
     {
+        "name": "Mahipal singh ",
+        "mobile": "2433253757",
+        "score": 2,
+        "total": 3,
+        "result": "2 out of 3",
+        "rank": 16
+    },
+    {
         "name": "SHREYA DURGAN",
         "mobile": "8442051456",
         "score": 1,
         "total": 3,
         "result": "1 out of 3",
-        "rank": 16
+        "rank": 17
     },
     {
         "name": "jarvis",
@@ -133,6 +141,6 @@
         "score": 1,
         "total": 3,
         "result": "1 out of 3",
-        "rank": 17
+        "rank": 18
     }
 ]
