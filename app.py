@@ -47,7 +47,7 @@
 #         city = request.form.get("city")
 
 #         # Create a dictionary for registration data
-#         user_data = {
+#         Userdata = {
 #             "name": name,
 #             "mobile": mobile,
 #             "email": email,
@@ -57,8 +57,8 @@
 #         }
 
 #         # Save the registration data to MongoDB and local JSON file
-#         save_registration_mongodb(user_data)
-#         save_registration_local(user_data)
+#         save_registration_mongodb(Userdata)
+#         save_registration_local(Userdata)
 
 #         # Redirect to the test page with the user's details
 #         return redirect(url_for("test", name=name, mobile=mobile))
@@ -145,12 +145,12 @@ def save_registration_local(Userdata):
 
 # Save results to MongoDB
 # Save registration data to MongoDB
-def save_registration_mongodb(userdata):
+def save_registration_mongodb(Userdata):
     # Insert a single registration entry
-    result = registration_collection.insert_one(userdata)
+    result = registration_collection.insert_one(Userdata)
     # Add the inserted ID to the data for further reference
-    userdata["_id"] = str(result.inserted_id)
-    return userdata
+    Userdata["_id"] = str(result.inserted_id)
+    return Userdata
 
 
 def load_questions():
@@ -179,7 +179,7 @@ def index():
         city = request.form.get("city")
 
         # Create a dictionary for registration data
-        user_data = {
+        Userdata = {
             "name": name,
             "mobile": mobile,
             "email": email,
@@ -189,8 +189,8 @@ def index():
         }
         
         # Save the registration data to MongoDB and local JSON file
-        saved_data = save_registration_mongodb(user_data)  # Now saves to MongoDB
-        save_registration_local(user_data)  # Saves locally to `registrations.json`
+        saved_data = save_registration_mongodb(Userdata)  # Now saves to MongoDB
+        save_registration_local(Userdata)  # Saves locally to `registrations.json`
 
         # Redirect to the test page with the user's details
         return redirect(url_for("test"))
