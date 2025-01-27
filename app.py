@@ -145,12 +145,12 @@ def save_registration_local(Userdata):
 
 # Save results to MongoDB
 # Save registration data to MongoDB
-def save_registration_mongodb(user_data):
+def save_registration_mongodb(userdata):
     # Insert a single registration entry
-    result = registration_collection.insert_one(user_data)
+    result = registration_collection.insert_one(userdata)
     # Add the inserted ID to the data for further reference
-    user_data["_id"] = str(result.inserted_id)
-    return user_data
+    userdata["_id"] = str(result.inserted_id)
+    return userdata
 
 
 def load_questions():
