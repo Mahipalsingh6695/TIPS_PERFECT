@@ -1,157 +1,172 @@
 [
   {
     "id": 1,
-    "question": "Which of the following Python modules is used to create and manage virtual environments?",
-    "options": ["virtualenv", "venv", "pipenv", "All of the above"],
-    "answer": "All of the above"
+    "question": "Which of the following is a valid C variable name?",
+    "options": ["1variable", "_variable", "variable-name", "None of the above"],
+    "answer": "_variable"
   },
   {
     "id": 2,
-    "question": "What will the following Python code output?\n\ndef func(x=[]):\n    x.append(1)\n    return x\nprint(func())\nprint(func())",
-    "options": ["[1], [1]", "[1], [1, 1]", "[1, 1], [1]", "None of the above"],
-    "answer": "[1], [1, 1]"
+    "question": "Which keyword is used to declare a constant variable in C?",
+    "options": ["const", "constant", "final", "static"],
+    "answer": "const"
   },
   {
     "id": 3,
-    "question": "Which of the following best describes Python’s GIL (Global Interpreter Lock)?",
-    "options": [
-      "Allows multi-threading to run faster",
-      "Restricts execution of multiple threads to one at a time",
-      "A mechanism for garbage collection",
-      "Enables asynchronous execution"
-    ],
-    "answer": "Restricts execution of multiple threads to one at a time"
+    "question": "What will be the output of the following code?\n\nint main() {\n    int x = 5;\n    printf(\"%d\", x++);\n    return 0;\n}",
+    "options": ["4", "5", "6", "Undefined"],
+    "answer": "5"
   },
   {
     "id": 4,
-    "question": "What is the purpose of the @property decorator in Python?",
-    "options": [
-      "To define a function as static",
-      "To create immutable properties",
-      "To define a getter method for a property",
-      "To initialize instance variables"
-    ],
-    "answer": "To define a getter method for a property"
+    "question": "Which format specifier is used to print an address in C?",
+    "options": ["%d", "%p", "%x", "%f"],
+    "answer": "%p"
   },
   {
     "id": 5,
-    "question": "What will be the output of the following code?\n\nclass A:\n    def __init__(self):\n        self.val = 10\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.val += 5\nobj = B()\nprint(obj.val)",
-    "options": ["5", "10", "15", "Error"],
-    "answer": "15"
+    "question": "Which operator has the highest precedence in C?",
+    "options": ["+", "&&", "*", "()"],
+    "answer": "()"
   },
   {
     "id": 6,
-    "question": "Which method is used to make a deep copy of an object in Python?",
-    "options": ["copy.copy()", "copy.deepcopy()", "deepcopy.copy()", "None of the above"],
-    "answer": "copy.deepcopy()"
+    "question": "What is the default return type of the main() function in C?",
+    "options": ["void", "int", "float", "char"],
+    "answer": "int"
   },
   {
     "id": 7,
-    "question": "Which Python library provides seamless bindings for DOM manipulation in browsers?",
-    "options": ["bs4", "selenium", "pyjs", "django"],
-    "answer": "selenium"
+    "question": "Which of the following is not a valid storage class in C?",
+    "options": ["auto", "static", "register", "mutable"],
+    "answer": "mutable"
   },
   {
     "id": 8,
-    "question": "In Python, how does @staticmethod differ from @classmethod?",
-    "options": [
-      "staticmethod doesn't require a self or cls argument, while classmethod requires cls.",
-      "staticmethod requires cls, while classmethod requires self.",
-      "Both are identical in behavior.",
-      "Neither works without the self argument."
-    ],
-    "answer": "staticmethod doesn't require a self or cls argument, while classmethod requires cls."
+    "question": "How can you dynamically allocate memory in C?",
+    "options": ["malloc()", "new", "alloc()", "create()"],
+    "answer": "malloc()"
   },
   {
     "id": 9,
-    "question": "What will the following Python code print?\n\nx = (i for i in range(3))\nprint(sum(x) + sum(x))",
-    "options": ["6", "3", "0", "Error"],
-    "answer": "3"
+    "question": "Which of the following statements is true about pointers in C?",
+    "options": [
+      "Pointers store the value of a variable",
+      "Pointers store the address of a variable",
+      "Pointers cannot be NULL",
+      "Pointers can only point to integers"
+    ],
+    "answer": "Pointers store the address of a variable"
   },
   {
     "id": 10,
-    "question": "Which of the following Python features supports asynchronous programming?",
-    "options": ["Threads", "Async/Await", "Multiprocessing", "None of the above"],
-    "answer": "Async/Await"
+    "question": "What is the purpose of the sizeof operator in C?",
+    "options": [
+      "To determine the size of a variable or data type",
+      "To allocate memory",
+      "To free memory",
+      "To compare values"
+    ],
+    "answer": "To determine the size of a variable or data type"
   },
   {
     "id": 11,
-    "question": "Which HTML attribute specifies alternative text for an image if the image cannot be displayed?",
-    "options": ["title", "alt", "src", "description"],
-    "answer": "alt"
+    "question": "Which of the following loops is guaranteed to execute at least once?",
+    "options": ["for", "while", "do-while", "None of the above"],
+    "answer": "do-while"
   },
   {
     "id": 12,
-    "question": "Which Bootstrap class provides a fixed-width container that is responsive?",
-    "options": ["container-fixed", "container-fluid", "container", "container-sm"],
-    "answer": "container"
+    "question": "What is the output of the following code?\n\nint x = 5, y = 10;\nprintf(\"%d\", x > y ? x : y);",
+    "options": ["5", "10", "0", "Undefined"],
+    "answer": "10"
   },
   {
     "id": 13,
-    "question": "What is the primary purpose of the z-index property in CSS?",
-    "options": [
-      "Set the stacking order of elements",
-      "Adjust the scaling of elements",
-      "Define the size of elements",
-      "Center elements on the page"
-    ],
-    "answer": "Set the stacking order of elements"
+    "question": "Which library function is used to read a string from the user in C?",
+    "options": ["scanf()", "gets()", "fgets()", "Both b and c"],
+    "answer": "Both b and c"
   },
   {
     "id": 14,
-    "question": "What does the Bootstrap class d-flex do?",
-    "options": [
-      "Adds padding to the element",
-      "Makes the element float",
-      "Converts the element into a flex container",
-      "None of the above"
-    ],
-    "answer": "Converts the element into a flex container"
+    "question": "Which of the following is a valid way to declare an array in C?",
+    "options": ["int arr[5];", "array arr[5];", "int[5] arr;", "int arr = new int[5];"],
+    "answer": "int arr[5];"
   },
   {
     "id": 15,
-    "question": "Which of the following is not a valid Bootstrap breakpoint?",
-    "options": ["sm", "lg", "xl", "xs"],
-    "answer": "xs"
+    "question": "Which function is used to compare two strings in C?",
+    "options": ["strcmp()", "strcomp()", "strcompare()", "compare()"],
+    "answer": "strcmp()"
   },
   {
     "id": 16,
-    "question": "Which CSS rule prevents an element from being resized by the user?",
-    "options": ["overflow: hidden", "resize: none", "display: fixed", "user-select: none"],
-    "answer": "resize: none"
+    "question": "Which data type is not supported in C?",
+    "options": ["int", "float", "bool", "char"],
+    "answer": "bool"
   },
   {
     "id": 17,
-    "question": "What is the correct syntax for a media query that applies styles for devices with a maximum width of 768px?",
+    "question": "Which of the following statements is true about structures in C?",
     "options": [
-      "@media (min-width: 768px)",
-      "@media (width: 768px)",
-      "@media (max-width: 768px)",
-      "@media (device-width: 768px)"
+      "Structures can contain different data types",
+      "Structures cannot have pointers",
+      "Structures do not support functions",
+      "Structures are identical to arrays"
     ],
-    "answer": "@media (max-width: 768px)"
+    "answer": "Structures can contain different data types"
   },
   {
     "id": 18,
-    "question": "Which Bootstrap utility class is used to hide an element for all screen sizes?",
-    "options": ["d-none", "invisible", "d-hide", "hidden"],
-    "answer": "d-none"
+    "question": "What is the return type of malloc() in C?",
+    "options": ["void", "int", "void*", "char*"],
+    "answer": "void*"
   },
   {
     "id": 19,
-    "question": "What does the following HTML code produce?\n\n<div class='dropdown'>\n  <button class='btn btn-primary dropdown-toggle' type='button' data-toggle='dropdown'>\n    Menu\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Option 1</a>\n    <a class='dropdown-item' href='#'>Option 2</a>\n  </div>\n</div>",
-    "options": [
-      "A button with two options in a toggleable dropdown",
-      "A list with clickable links",
-      "A menu bar with multiple options",
-      "None of the above"
-    ],
-    "answer": "A button with two options in a toggleable dropdown"
+    "question": "Which function is used to open a file in C?",
+    "options": ["fopen()", "open()", "fileopen()", "fcreate()"],
+    "answer": "fopen()"
   },
   {
     "id": 20,
-    "question": "Which CSS property is used to create a grid layout?",
-    "options": ["display: table;", "display: grid;", "display: inline-grid;", "Both b and c"],
-    "answer": "Both b and c"
+    "question": "Which of the following is true about macros in C?",
+    "options": [
+      "They are replaced by their values during preprocessing",
+      "They are executed at runtime",
+      "They consume memory at runtime",
+      "They can be modified during execution"
+    ],
+    "answer": "They are replaced by their values during preprocessing"
+  },
+  {
+    "id": 21,
+    "question": "What will be the output of the following code?\n\nint a = 5;\nint *p = &a;\nprintf(\"%d\", *p);",
+    "options": ["Address of a", "5", "Garbage value", "Error"],
+    "answer": "5"
+  },
+  {
+    "id": 22,
+    "question": "What will the expression 5 / 2 evaluate to in C?",
+    "options": ["2.5", "2", "3", "Error"],
+    "answer": "2"
+  },
+  {
+    "id": 23,
+    "question": "Which of the following is used to terminate a C program?",
+    "options": ["break", "exit()", "continue", "stop"],
+    "answer": "exit()"
+  },
+  {
+    "id": 24,
+    "question": "What will the following code print?\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%c\", str[1]);\n    return 0;\n}",
+    "options": ["H", "e", "l", "o"],
+    "answer": "e"
+  },
+  {
+    "id": 25,
+    "question": "Which header file is required for using printf() and scanf() in C?",
+    "options": ["stdlib.h", "stdio.h", "string.h", "math.h"],
+    "answer": "stdio.h"
   }
 ]

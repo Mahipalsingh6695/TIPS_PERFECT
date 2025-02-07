@@ -4,55 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCQ Test Registration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        .container {
-            width: 50%;
-            margin: 5% auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input, select {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="./static/index.css">
+
 </head>
 <body>
     <div class="container">
-        <h1>Register for the MCQ Test</h1>
+        <h1>Register for the TTRE</h1>
+
+        <!-- Important Instructions Section -->
+        <div class="instructions">
+            <h2>Important Instructions:</h2>
+            <ul>
+                <li>📌 Attempt all questions carefully.</li>
+                <li>📌 Once submitted, you cannot retake the test.</li>
+                <li>📌 Ensure all details are correct before submitting.</li>
+                <li>📌 Do not refresh the page during the test.</li>
+                <li>📌 Malpractice or multiple attempts will lead to disqualification.</li>
+            </ul>
+        </div>
+
         <form action="/" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -72,8 +42,16 @@
             <label for="city">City:</label>
             <input type="text" id="city" name="city" required placeholder="Enter your city">
 
+            <!-- Agreement Checkbox -->
+            <label for="agreement">
+                <input type="checkbox" id="agreement" required>
+                I have read and agree to the above instructions.
+            </label>
+
             <button type="submit">Register</button>
         </form>
     </div>
+    <script src="./static/index.js"></script>
+
 </body>
 </html>
