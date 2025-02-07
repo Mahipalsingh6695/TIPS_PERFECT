@@ -1,172 +1,152 @@
 [
   {
     "id": 1,
-    "question": "Which of the following is a valid C variable name?",
-    "options": ["1variable", "_variable", "variable-name", "None of the above"],
-    "answer": "_variable"
+    "question": "Which HTML5 element is used to define self-contained content that can be independently distributed or reused?",
+    "options": ["<section>", "<div>", "<article>", "<aside>"],
+    "answer": "<article>"
   },
   {
     "id": 2,
-    "question": "Which keyword is used to declare a constant variable in C?",
-    "options": ["const", "constant", "final", "static"],
-    "answer": "const"
+    "question": "In HTML5, which attribute is used to specify that an input field must be filled out before submitting the form?",
+    "options": ["required", "validate", "mandatory", "checked"],
+    "answer": "required"
   },
   {
     "id": 3,
-    "question": "What will be the output of the following code?\n\nint main() {\n    int x = 5;\n    printf(\"%d\", x++);\n    return 0;\n}",
-    "options": ["4", "5", "6", "Undefined"],
-    "answer": "5"
+    "question": "Which CSS property is used to control the space between lines of text?",
+    "options": ["letter-spacing", "word-spacing", "line-height", "text-spacing"],
+    "answer": "line-height"
   },
   {
     "id": 4,
-    "question": "Which format specifier is used to print an address in C?",
-    "options": ["%d", "%p", "%x", "%f"],
-    "answer": "%p"
+    "question": "Which CSS feature allows you to apply styles based on the size of the viewport?",
+    "options": ["Media Queries", "Flexbox", "Grid", "Pseudo-elements"],
+    "answer": "Media Queries"
   },
   {
     "id": 5,
-    "question": "Which operator has the highest precedence in C?",
-    "options": ["+", "&&", "*", "()"],
-    "answer": "()"
+    "question": "In Bootstrap, which class is used to make an image responsive?",
+    "options": [".img-fluid", ".img-responsive", ".responsive-img", ".img-scale"],
+    "answer": ".img-fluid"
   },
   {
     "id": 6,
-    "question": "What is the default return type of the main() function in C?",
-    "options": ["void", "int", "float", "char"],
-    "answer": "int"
+    "question": "What is the correct way to link an external CSS file in HTML?",
+    "options": ["<link rel='stylesheet' type='text/css' href='styles.css'>", "<style src='styles.css'>", "<css href='styles.css'>", "<stylesheet link='styles.css'>"],
+    "answer": "<link rel='stylesheet' type='text/css' href='styles.css'>"
   },
   {
     "id": 7,
-    "question": "Which of the following is not a valid storage class in C?",
-    "options": ["auto", "static", "register", "mutable"],
-    "answer": "mutable"
+    "question": "Which Bootstrap class is used to create a button that spans the full width of a parent container?",
+    "options": [".btn-block", ".btn-full", ".btn-wide", ".btn-100"],
+    "answer": ".btn-block"
   },
   {
     "id": 8,
-    "question": "How can you dynamically allocate memory in C?",
-    "options": ["malloc()", "new", "alloc()", "create()"],
-    "answer": "malloc()"
+    "question": "What is the default position property of an HTML element?",
+    "options": ["relative", "absolute", "static", "fixed"],
+    "answer": "static"
   },
   {
     "id": 9,
-    "question": "Which of the following statements is true about pointers in C?",
-    "options": [
-      "Pointers store the value of a variable",
-      "Pointers store the address of a variable",
-      "Pointers cannot be NULL",
-      "Pointers can only point to integers"
-    ],
-    "answer": "Pointers store the address of a variable"
+    "question": "Which Bootstrap class would you use to create a responsive navigation bar?",
+    "options": [".navbar-responsive", ".nav-flex", ".navbar-expand-lg", ".nav-adaptive"],
+    "answer": ".navbar-expand-lg"
   },
   {
     "id": 10,
-    "question": "What is the purpose of the sizeof operator in C?",
-    "options": [
-      "To determine the size of a variable or data type",
-      "To allocate memory",
-      "To free memory",
-      "To compare values"
-    ],
-    "answer": "To determine the size of a variable or data type"
+    "question": "Which HTML element is used for the highest level heading?",
+    "options": ["<h6>", "<h5>", "<h1>", "<header>"],
+    "answer": "<h1>"
   },
   {
     "id": 11,
-    "question": "Which of the following loops is guaranteed to execute at least once?",
-    "options": ["for", "while", "do-while", "None of the above"],
-    "answer": "do-while"
+    "question": "Which CSS property makes an element's background color fully transparent?",
+    "options": ["opacity", "visibility", "background-color", "z-index"],
+    "answer": "opacity"
   },
   {
     "id": 12,
-    "question": "What is the output of the following code?\n\nint x = 5, y = 10;\nprintf(\"%d\", x > y ? x : y);",
-    "options": ["5", "10", "0", "Undefined"],
-    "answer": "10"
+    "question": "Which Bootstrap class provides equal-width columns for different screen sizes?",
+    "options": [".col-auto", ".col", ".col-sm", ".col-fixed"],
+    "answer": ".col"
   },
   {
     "id": 13,
-    "question": "Which library function is used to read a string from the user in C?",
-    "options": ["scanf()", "gets()", "fgets()", "Both b and c"],
-    "answer": "Both b and c"
+    "question": "Which CSS pseudo-class is used to style an element when the user hovers over it?",
+    "options": [":hover", ":focus", ":active", ":checked"],
+    "answer": ":hover"
   },
   {
     "id": 14,
-    "question": "Which of the following is a valid way to declare an array in C?",
-    "options": ["int arr[5];", "array arr[5];", "int[5] arr;", "int arr = new int[5];"],
-    "answer": "int arr[5];"
+    "question": "Which Bootstrap class is used to create a container that spans the full width of the viewport?",
+    "options": [".container", ".container-fluid", ".container-wide", ".container-full"],
+    "answer": ".container-fluid"
   },
   {
     "id": 15,
-    "question": "Which function is used to compare two strings in C?",
-    "options": ["strcmp()", "strcomp()", "strcompare()", "compare()"],
-    "answer": "strcmp()"
+    "question": "Which of the following is the correct way to apply multiple CSS classes to an HTML element?",
+    "options": ["class='class1 class2'", "class='class1, class2'", "class='class1; class2'", "class='class1.class2'"],
+    "answer": "class='class1 class2'"
   },
   {
     "id": 16,
-    "question": "Which data type is not supported in C?",
-    "options": ["int", "float", "bool", "char"],
-    "answer": "bool"
+    "question": "Which HTML5 element is used to group form controls together?",
+    "options": ["<form>", "<fieldset>", "<group>", "<container>"],
+    "answer": "<fieldset>"
   },
   {
     "id": 17,
-    "question": "Which of the following statements is true about structures in C?",
-    "options": [
-      "Structures can contain different data types",
-      "Structures cannot have pointers",
-      "Structures do not support functions",
-      "Structures are identical to arrays"
-    ],
-    "answer": "Structures can contain different data types"
+    "question": "Which CSS property is used to create rounded corners on an element?",
+    "options": ["border-radius", "corner-radius", "rounded", "box-radius"],
+    "answer": "border-radius"
   },
   {
     "id": 18,
-    "question": "What is the return type of malloc() in C?",
-    "options": ["void", "int", "void*", "char*"],
-    "answer": "void*"
+    "question": "Which Bootstrap component is used to display collapsible content?",
+    "options": ["Modal", "Accordion", "Collapse", "Dropdown"],
+    "answer": "Collapse"
   },
   {
     "id": 19,
-    "question": "Which function is used to open a file in C?",
-    "options": ["fopen()", "open()", "fileopen()", "fcreate()"],
-    "answer": "fopen()"
+    "question": "Which HTML tag is used to define a table row?",
+    "options": ["<th>", "<tr>", "<td>", "<table-row>"],
+    "answer": "<tr>"
   },
   {
     "id": 20,
-    "question": "Which of the following is true about macros in C?",
-    "options": [
-      "They are replaced by their values during preprocessing",
-      "They are executed at runtime",
-      "They consume memory at runtime",
-      "They can be modified during execution"
-    ],
-    "answer": "They are replaced by their values during preprocessing"
+    "question": "What is the default display property of the <span> element?",
+    "options": ["block", "inline", "inline-block", "none"],
+    "answer": "inline"
   },
   {
     "id": 21,
-    "question": "What will be the output of the following code?\n\nint a = 5;\nint *p = &a;\nprintf(\"%d\", *p);",
-    "options": ["Address of a", "5", "Garbage value", "Error"],
-    "answer": "5"
+    "question": "Which CSS property is used to make an element appear and disappear without removing it from the document flow?",
+    "options": ["opacity", "visibility", "display", "overflow"],
+    "answer": "visibility"
   },
   {
     "id": 22,
-    "question": "What will the expression 5 / 2 evaluate to in C?",
-    "options": ["2.5", "2", "3", "Error"],
-    "answer": "2"
+    "question": "Which Bootstrap class is used to create a responsive grid layout?",
+    "options": [".grid", ".grid-responsive", ".row", ".column"],
+    "answer": ".row"
   },
   {
     "id": 23,
-    "question": "Which of the following is used to terminate a C program?",
-    "options": ["break", "exit()", "continue", "stop"],
-    "answer": "exit()"
+    "question": "Which CSS property allows an element to be positioned relative to its nearest positioned ancestor?",
+    "options": ["absolute", "fixed", "relative", "sticky"],
+    "answer": "absolute"
   },
   {
     "id": 24,
-    "question": "What will the following code print?\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%c\", str[1]);\n    return 0;\n}",
-    "options": ["H", "e", "l", "o"],
-    "answer": "e"
+    "question": "Which HTML attribute specifies alternative text for an image?",
+    "options": ["alt", "title", "src", "description"],
+    "answer": "alt"
   },
   {
     "id": 25,
-    "question": "Which header file is required for using printf() and scanf() in C?",
-    "options": ["stdlib.h", "stdio.h", "string.h", "math.h"],
-    "answer": "stdio.h"
+    "question": "Which Bootstrap class is used to create a badge inside a button?",
+    "options": [".badge", ".label", ".tag", ".button-badge"],
+    "answer": ".badge"
   }
 ]
